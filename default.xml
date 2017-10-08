@@ -2,58 +2,9 @@
 <manifest>
   <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
   <default remote="caf" revision="LA.UM.6.4.r1"/>
-  <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="5688dc62ab70133eea4c3644ebffd8161f198a07" upstream="uefi.lnx.1.0.r20-rel"/>
-  <project name="device/common" revision="699af187e87bab62db3e8c5189a7fb407da4a0eb" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/arm64" revision="392eec3cb4c64721cd5b76fa36535954b5d45309" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/armv7-a-neon" revision="a438913160c744d266326f82f25f0a1304221fd0" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/car" revision="4235adf8f3d9c6750d6558a522d3196bfec7ea0e" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/common" revision="0fa99b259f1e2637145ff0bd0e9f1fb842459289" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/goldfish" revision="e9c7400682adf1a99313f3dba24ae3cb92bca760" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/goldfish-opengl" revision="2e54daf5e676f7794f190586cef71ab2733021c0" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/mini-emulator-arm64" revision="dabdb42838bca2aa3f0df77fd08d37e337fceda7" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/mini-emulator-armv7-a-neon" revision="258706fc0ddcf2c9be48967f4766ec90efb736a5" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/mini-emulator-x86" revision="65d59e2be2cfd713513a05d80a0f75794ab60579" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/mini-emulator-x86_64" revision="d57c0a07e17a7e1cb9067681716bfdcdecdf22e7" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/qemu" revision="97ef4f962aec451b00bfe562c1cb67471c4563d9" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/x86" revision="6d4527312735e4edae6e2d10b8087a935fee8be6" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/generic/x86_64" revision="734d9d725e200acf7dcb779896955299b86ebb86" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/google/accessory/arduino" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/google/accessory/demokit" revision="7dfe7f89a3b174709c773fe319531006e46440d9" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/google/atv" revision="ebeb095713ef9e217bcd96e85c937a91ffb9d0ed" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/google/contexthub" revision="6bc90070dd36985229626927607045986cc40437" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/google/vrservices" revision="bd77aef63c09cbcb0024c13df414360920fd75a1" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="device/qcom/common" revision="7217afc7ad299d1d437ec5a8bb5e3ffac9b1fe43" upstream="qcom-devices.lnx.1.9.r2-rel">
-    <copyfile dest="build.sh" src="build.sh"/>
-    <copyfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-  </project>
-  <project name="device/qcom/sepolicy" revision="e6d0a045724179627b8d2d4cfddc7e172d67d91b" upstream="sepolicy.lnx.2.9.r2-rel"/>
-  <project name="device/sample" revision="8b55985d7f110c5639b0917dc71cbf58aacf8c24" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="kernel/msm-4.4" revision="c23307eeaa98eaf845ae5205502bcbdc7fb2b911" upstream="kernel.lnx.4.4.r18-rel"/>
-  <project name="platform/art" path="art" revision="2dabdfa28918481ab9b0ca7b4f19b694fbf9368a" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/bionic" path="bionic" revision="7de94082376f896f20515494aa36c57dba759e0d" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/bootable/recovery" path="bootable/recovery" revision="f449ad948d26505cd12dcb39144a51946d006ffc" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/build" path="build/make" revision="ab95cd2eb6bf8263751d9ceb0ad49b829e62b822" upstream="android-framework.lnx.2.9.1.r2-rel">
-    <copyfile dest="Makefile" src="core/root.mk"/>
-    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
-    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
-    <linkfile dest="build/core" src="core"/>
-    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
-    <linkfile dest="build/target" src="target"/>
-    <linkfile dest="build/tools" src="tools"/>
-  </project>
   <project name="platform/build/blueprint" path="build/blueprint" revision="9c203c9744e46f5421319fdf6240a788a09c91d2" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/build/kati" path="build/kati" revision="e7c4743b376c1a05ce779e4d626e49af8e6c1045" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/build/soong" path="build/soong" revision="188127ba526ef4230b7fb553315aad3b0665a689" upstream="android-framework.lnx.2.9.1.r2-rel">
-    <linkfile dest="Android.bp" src="root.bp"/>
-    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
-  </project>
   <project name="platform/cts" path="cts" revision="1eb1dc33e02a2eea1a46c0aed8bd18e225c5f78e" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/dalvik" path="dalvik" revision="4a6f7461dbcda7a975730b9ce4f2e70eb5cdded6" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/developers/build" path="developers/build" revision="6f1bbd6b9589818154d555f216e800223ce5d063" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/developers/demos" path="developers/demos" revision="7bd7834eee082f32ae8eaab9bf014d77c6cf521a" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/developers/samples/android" path="developers/samples/android" revision="a8c6307fae854e21a66498aa3c1badd717ea375f" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/development" path="development" revision="862fea5734a38382df4b5f6c483a4aad98b2c627" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/docs/source.android.com" path="docs/source.android.com" revision="68e91911971bc0f0a4d766824021805965d6c2e3" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/external/ImageMagick" path="external/ImageMagick" revision="6d5e443d5f090be54f0f1623171bf83102c0e688" upstream="android-external.lnx.2.9.1.r2-rel"/>
   <project name="platform/external/Microsoft-GSL" path="external/Microsoft-GSL" revision="c7231a8b061cb44839292cf4de1aa2b8d3fc165f" upstream="android-external.lnx.2.9.1.r2-rel"/>
   <project name="platform/external/aac" path="external/aac" revision="fae0c184cfb75487a5fd26066c70dc9331eeb69c" upstream="android-external.lnx.2.9.1.r2-rel"/>
@@ -356,9 +307,6 @@
   <project name="platform/frameworks/webview" path="frameworks/webview" revision="1a52f8bf1e846cb3a086a5028751880c91866606" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="d1b09f4349473b5e3fb9f2825a5bee923280df6b" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/hardware/akm" path="hardware/akm" revision="99e8b227cd00678ce863c04ebde0b8d9a6f7df5c" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" revision="e8f0dd9518897b4f4d80418dff063567cfab133e" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="ed1ff224e1dd69e698d913dbf581e0c697f99543" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/hardware/google/apf" path="hardware/google/apf" revision="3a229e4ca91eaf502357b584b469b8b287f7430f" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/hardware/interfaces" path="hardware/interfaces" revision="4b123f18913fe2a3abc5790181830ef7ec717b1e" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/hardware/invensense" path="hardware/invensense" revision="11e5ff75af866f91622b6008fa13db1c3685ae69" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/hardware/libhardware" path="hardware/libhardware" revision="2f9ee763c9809e1703e4350a459357053634fdf4" upstream="android-framework.lnx.2.9.1.r2-rel"/>
@@ -534,14 +482,6 @@
   <project name="platform/system/tpm" path="system/tpm" revision="987689803d813efb9b011236a7853c8f3edba1f6" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/system/update_engine" path="system/update_engine" revision="957619a1ed73bf42448ed5aedf637ef72662f411" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/system/vold" path="system/vold" revision="fbfd93a376a466aa7f54cf7afc6cf84b05a4bdf2" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/test/vts" path="test/vts" revision="288f33da81de9d4c5e648c618da946469195f4be" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="665101c781a46f03486e7b6606a1475343acc3f3" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="a3381207689425c19a702e831fb1c57764939811" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="f38ec699e993eab3d2c7f6bc6734a31fdea94033" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="503600770dd17bef6f2d0c9562668165ae93ac3d" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="0e5550a2289c39862b6afbe986d7af3fea689a8b" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="3950c8bc23c1c809296f266546c25601ed91c336" upstream="android-framework.lnx.2.9.1.r2-rel"/>
-  <project name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="0967dfc09c3fcbcc0123823825d76663172146ae" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/tools/apksig" path="tools/apksig" revision="3f9953079b7b1bb6f9443215c9173e4225d017da" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/tools/external/fat32lib" path="tools/external/fat32lib" revision="3880776e41ff7def06e351720f2d162f88b58a03" upstream="android-framework.lnx.2.9.1.r2-rel"/>
   <project name="platform/tools/external/gradle" path="tools/external/gradle" revision="01eafe283102ebb395c7cc0c22d258fd657c7af7" upstream="android-framework.lnx.2.9.1.r2-rel"/>
