@@ -71,4 +71,9 @@
   <project path="system/netd" name="system_netd" remote="omnirom-caf" revision="oreo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="omnirom-caf" revision="oreo" />
   <project path="system/vold" name="system_vold" remote="omnirom-caf" revision="oreo" />
+  
+  <project path="external/libnetfilter_conntrack" name="external_libnetfilter_conntrack" remote="omnirom-caf" revision="oreo" />
+  <project path="external/libnfnetlink" name="external_libnfnetlink" remote="omnirom-caf" revision="oreo" />
+  <project path="hardware/ril" name="hardware_ril" remote="omnirom-caf" revision="oreo" />
+  <project path="hardware/ril-caf" name="hardware_ril-caf" remote="omnirom-caf" revision="oreo-caf" />
 </manifest>
