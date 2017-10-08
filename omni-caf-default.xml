@@ -6,6 +6,10 @@
 
   <remote  name="omnirom-caf"
            fetch="https://github.com/omnirom-caf" />
+  
+  <remote  name="omnirom"
+           fetch="https://github.com/omnirom"
+           review="gerrit.omnirom.org" />
 
   <project path="bionic" name="bionic" remote="omnirom-caf" revision="oreo" groups="pdk" />
 
