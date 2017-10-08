@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remove-project name="platform/bionic" />
-  <remove-project name="platform/build" />
-  <remove-project name="platform/build/soong" />
-  <remove-project name="device/common" />
-  <remove-project name="device/generic/armv7-a-neon" />
-  <remove-project name="device/generic/arm64" />
-  <remove-project name="device/generic/armv7-a-neon" />
-  <remove-project name="device/generic/car" />
+ 
   <remove-project name="platform/development" />
-
-  <remove-project name="platform/developers/build" />
-  <remove-project name="platform/developers/demos" />
-  <remove-project name="platform/developers/samples/android" />
-
-  <remove-project name="platform/docs/source.android.com" />
-
-  
-
-
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/libnfnetlink" />
   <remove-project name="platform/external/libnetfilter_conntrack" />
