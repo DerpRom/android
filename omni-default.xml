@@ -10,10 +10,10 @@
   <!-- OmniROM Projects -->
   <project path="android" name="android" remote="omnirom-caf" revision="oreo" />
 
-  <project path="vendor/omni" name="vendor_omni" remote="omnirom" revision="oreo" />
+  <project path="vendor/omni" name="vendor_omni" remote="omnirom-caf" revision="oreo" />
 
-  <project path="external/exfat" name="external_exfat" remote="omnirom" revision="oreo" />
-  <project path="external/fuse" name="external_fuse" remote="omnirom" revision="oreo" />
+  <project path="external/exfat" name="external_exfat" remote="omnirom-caf" revision="oreo" />
+  <project path="external/fuse" name="external_fuse" remote="omnirom-caf" revision="oreo" />
 
   <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="omnirom" revision="android-8.0" />
   <project path="packages/apps/Matlog" name="android_packages_apps_Matlog" remote="omnirom" revision="android-8.0" />
