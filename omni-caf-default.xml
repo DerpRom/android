@@ -55,7 +55,7 @@
   <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="omnirom-caf" revision="oreo" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan" remote="omnirom-caf" revision="oreo-caf" />
   <project path="hardware/qcom/keymaset" name="hardware_qcom_keymaster" remote="omnirom-caf" revision="oreo" />
-  <project path="hardware/qcom/power" name="hardware_qcom_power" remote="omnirom-caf" revision="oreo" />
+  
   
   <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" remote="omnirom" revision="android-8.0" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="omnirom" revision="android-8.0" />
